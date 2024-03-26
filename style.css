@@ -1,0 +1,116 @@
+:root{
+     --color-prymari: #0073ff;
+     --color-prymari: #e9e9e9;
+     --color-prymari: #141d28;
+     --color-prymari: #212b38;
+}
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    
+}
+
+body{
+    font-family: sans-serif;
+    background-image: url(SOSOSO.jpeg);
+    background-size: cover;
+    
+}
+
+.manu__bar{
+    background-color: black;
+    height: 80px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 5%;
+    
+}
+
+.logo{
+    color: white;
+    font-size: 30px;
+}
+
+.logo span{
+    color: gold;
+}
+
+.manu__bar ul{
+    list-style: none;
+    display: flex;
+    font-weight: bold;
+    
+}
+
+.manu__bar ul li a:hover{
+    color: gold;
+}
+
+.manu__bar ul li{
+    padding: 10px 30px;
+    position: relative;
+    
+}
+.manu__bar ul li a{
+    color: white;
+    text-decoration: none;
+    font-size: 20px;
+
+    transition: all 0.1s;
+}
+
+
+
+.dropdown__manu{
+   display: none;
+   border-radius: 10px;
+   box-shadow: 2px 2px 3px yellowgreen;
+
+   
+}
+
+.manu__bar ul li:hover .dropdown__manu{
+    color: white;
+    display: block;
+    position: absolute;
+    left: 0;
+    top: 100%;
+    background-color: black;
+   
+}
+
+.manu__bar ul li:hover .dropdown__manu ul{
+    display: block;
+    margin: 10px;
+
+}
+.manu__bar ul li:hover .dropdown__manu ul li{
+    width: 150px;
+    padding-left: 10px;
+   
+}
+
+
+.fas{
+    float: right;
+    margin-left: 10px;
+    padding-top: 3px;
+}
+
+.dropdown__manu-1{
+    display: none;
+    border-radius: 10px;
+    box-shadow: 2px 2px 3px yellowgreen;
+   
+}
+
+.dropdown__manu ul li:hover .dropdown__manu-1{
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 150px;
+    background-color: black;
+}
